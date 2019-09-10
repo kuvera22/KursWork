@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "518669708555",
+    "firebase_url": "https://kurswork-fbd22.firebaseio.com",
+    "project_id": "kurswork-fbd22",
+    "storage_bucket": "kurswork-fbd22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518669708555:android:20500002e2304d0cd0c60e",
+        "android_client_info": {
+          "package_name": "com.example.kurswork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518669708555-1q96i8e3i1tq0m52g414rsl7fjp7d5nb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kurswork",
+            "certificate_hash": "2bc4642bb73b90b6de14371d2dd305e419870508"
+          }
+        },
+        {
+          "client_id": "518669708555-tsq6tejvg68p1hih4aqboa9lf8ahv1hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVddOEcwpYTU0MLX5oHmiQHkT0eDlRMjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518669708555-tsq6tejvg68p1hih4aqboa9lf8ahv1hm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
