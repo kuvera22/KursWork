@@ -46,6 +46,16 @@
         style="@style/ButtonLogIn"/>
 
     <Button
+        android:id="@+id/buttonSignOut"
+        style="@style/ButtonLogIn"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="0dp"
+        android:text="Выход" />
+    <Button
         android:id="@+id/buttonRegistration"
         style="@style/ButtonLogIn"
         android:layout_width="205dp"

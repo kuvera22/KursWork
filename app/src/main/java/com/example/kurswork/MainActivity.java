@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
     private static final String TAG = "MainActivity";
 
     private EditText mEmail, mPassword;
-    private Button btnLogIn, btnReg;
+    private Button btnLogIn, btnReg, btnLogOut;
 
     public FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -34,7 +34,7 @@ import com.google.firebase.auth.FirebaseUser;
         mPassword=(EditText) findViewById(R.id.editTextPassword);
         btnLogIn=(Button) findViewById(R.id.buttonLogIN);
         btnReg=(Button) findViewById(R.id.buttonRegistration);
-
+        btnLogOut=(Button) findViewById(R.id.buttonSignOut);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -45,7 +45,7 @@ import com.google.firebase.auth.FirebaseUser;
                 if (user!=null) {
                                                     //если пользователь авторизован
                     ToastMessage("Выполнен вход как "+user.getEmail());
-                    openListPhoto();
+                  //  openListPhoto();
                 } else {                             //если пользователь не авторизован
 
                 }
@@ -69,6 +69,14 @@ import com.google.firebase.auth.FirebaseUser;
             @Override
             public void onClick(View view) {
                 registration(mEmail.getText().toString(),mPassword.getText().toString());
+            }
+        });
+
+        btnLogOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mAuth.signOut();
+                ToastMessage("Происходит выход" );
             }
         });
 
